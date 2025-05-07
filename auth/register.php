@@ -3,7 +3,7 @@ include '../db/db.php';
 $error = '';
 
 if(isset($_SESSION['username'])){
-  header("location: http://localhost/CMS%20Project%202/index.php");
+  header("location: " . BASE_URL . "index.php");
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
