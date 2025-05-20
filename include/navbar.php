@@ -36,7 +36,7 @@
                                 <?php echo $_SESSION['username']; ?>
                             </a>
                             <ul class="dropdown-menu rounded" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>users/profile.php?pf_id=<?php echo $_SESSION['id'] ?>">Profile</a></li>
                                 <li><a class="dropdown-item" href="<?php echo BASE_URL; ?>auth/logout.php">Logout</a></li>
                                 <!-- <li>
                                 <hr class="dropdown-divider">
